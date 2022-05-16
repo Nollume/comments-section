@@ -1,0 +1,58 @@
+.reply-container{
+    width: 95%;
+    margin-left: 5%;
+
+    position: relative;
+}
+
+
+
+.replies{
+    display: grid;
+    gap: 1rem;
+    
+}
+
+.reply-wrap{
+    position: relative;
+    display: grid;
+    gap: 1rem;
+    border-left: .125rem solid var(--Light-gray);
+}
+
+.replying-to{
+    font-weight: 500;
+    color: var(--Moderate-blue);
+}
+
+
+@media  screen and (min-width: 800px) {
+    
+
+    .reply-container{
+        width: 90%;
+        margin-left: 10%;
+    
+      
+    }
+
+    .reply-wrap{
+        gap: 1.5rem;
+        border-left: none;
+    }
+
+    .reply-wrap::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 5%;
+        border-left: .125rem solid var(--Light-gray);
+    }
+
+    .replies{
+     
+        gap: 1.5rem;
+    }
+    
+}

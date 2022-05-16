@@ -1,0 +1,69 @@
+.svg-reply,
+.svg-edit{
+    @extend %icons;
+
+    color: var(--Moderate-blue);
+    fill:  var(--Moderate-blue);
+
+    &:hover,
+    &:active{
+
+        color: var(--Light-grayish-blue);
+        fill: var(--Light-grayish-blue);
+
+    }
+}
+
+
+.svg-delete{
+    @extend %icons;
+
+    color: var(--Soft-Red);
+    fill: var(--Soft-Red);
+
+
+    &:hover,
+    &:active{
+
+        color: var(--Pale-red);
+        fill: var(--Pale-red);
+
+    }
+}
+
+
+
+.svg-icons-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.edit-border{
+    
+    outline: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: solid 0.0625rem var(--Light-gray);
+
+    color: var(--Dark-blue);
+    caret-color: var(--Dark-blue);
+}
+
+@media only screen and (min-width:800px) {
+
+    .svg-icons-container{
+        position: absolute;
+        right: 1.5rem;
+        top: 0.75rem;
+
+    }
+
+}

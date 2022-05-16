@@ -1,0 +1,73 @@
+.modal{
+
+    width: 95%;
+
+    padding: 1.5rem;
+    text-align: left;
+
+    border: none;
+    border-radius: .5rem;
+
+    animation: modalOpacity 0.25s ease-in-out forwards;
+    
+    font: {
+        weight: 400;
+        family: 'Rubik', sans-serif;
+    };
+
+    & h2 {
+        font-weight: 700;
+        font-size: 1.25rem;
+        color: var(--Dark-blue);
+
+        margin: 0;
+        margin-bottom:.5rem;
+    }
+
+    & p{
+        color: var(--Grayish-Blue);
+        margin: 1.25rem 0;
+    }
+
+
+    &::backdrop{
+        background-color: hsl(211, 10%, 45%);
+
+        animation: backdropOpacity 0.25s ease-in-out forwards;
+        
+    }
+}
+
+@keyframes modalOpacity {
+    0%{
+        opacity: 0;
+      }
+      50%{
+          opacity: .2;
+      }
+      100%{
+          opacity: 1;
+      }
+    
+}
+@keyframes backdropOpacity {
+    0%{
+        opacity: 0;
+      }
+      50%{
+          opacity: .2;
+      }
+      100%{
+          opacity: 0.5;
+      }
+    
+}
+
+
+@media only screen and (min-width:800px) {
+
+    .modal{
+        width: 22rem;
+    }
+
+}

@@ -1,0 +1,52 @@
+.header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    
+}
+
+
+.you-name{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.you{
+    background-color: var(--Moderate-blue);
+    color: var(--White);
+
+    margin: 0;
+    padding: 0.35rem;
+    line-height: .5rem;
+    border-radius: .125rem;
+
+}
+
+.when{
+    font-size: smaller;
+
+    position: absolute;
+    z-index: 5;
+    top: 0.4rem;
+    right: 1rem;
+    color: var(--Grayish-Blue);
+
+}
+
+
+@media  screen and (min-width: 800px) {
+    
+    .header{
+        margin-left: var(--margin-left);
+    }
+
+    .when{
+        
+        top: 2rem;
+        right: unset;
+        left: 8.35rem;
+        line-height: 1.375rem;
+    
+    }
+}

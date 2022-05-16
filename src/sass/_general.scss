@@ -1,0 +1,53 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+html { box-sizing: border-box; }
+*, *:before, *:after { box-sizing: inherit; }
+
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+body{
+
+    font: {
+        weight: 400;
+        family: 'Rubik', sans-serif;
+    };
+    
+    isolation: isolate;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--Very-light-gray);
+
+}
+
+.container{
+    width: 90%;
+    margin-top: 2rem ;
+
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+
+  @media only screen and (min-width:800px) {
+      .container{
+          width: 60%;
+          max-width: 55rem;
+          gap: 1.5rem;
+      }
+  }

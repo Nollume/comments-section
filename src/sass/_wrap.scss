@@ -1,0 +1,60 @@
+.wrap{
+
+    @extend %general-container;
+
+    position: relative;
+
+    animation: wrap 0.25s ease-in-out ;
+
+    & .name{
+        
+        font: {
+            weight: 700;
+            size: var(--font);
+        
+        }
+        color: var(--Dark-blue);
+        margin: 0;
+
+    }
+
+    & .comment{
+        max-width: 100%;
+        margin: 0.5rem 0 .5rem 0;
+
+    }
+
+}
+
+
+@keyframes wrap {
+    0%{
+        transform: scale(0.75);
+        opacity: 0;
+      }
+      50%{
+          opacity: .2;
+      }
+      100%{
+          opacity: 1;
+        transform: scale(1);
+      }
+    
+}
+
+
+@media  screen and (min-width: 800px) {
+    
+    .wrap{   
+    
+        min-height:8.4rem ;
+        padding: 1.5rem;
+
+        & .comment{
+            margin-left: var(--margin-left);
+        }
+    
+    }
+}
+
+
